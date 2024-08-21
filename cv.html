@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+     <div id="main">
+       
+        <div id="home">
+            <div id="nav">
+                
+                <a href="HOME" >HOME </a>
+                <a href="CONTECT" >CONTECT </a>
+                <a href="ABOUT" >ABOUT</a>
+                <a href="SKILL"  >SKILL</a>
+                <div class="cursor">  </div>
+            </div>
+            <div id="txt">PORTFOLIO</div>
+            <div id="intro">
+                <h2>Hello,I am</h2>
+                 <div id="name">
+                    <h1 class="sa">QURRAT UL</h1>
+                    <img src="https://cdn.dribbble.com/users/31664/screenshots/1525046/media/db5776930c835b9a5e3f194385331d3e.gif" alt="">
+                    <h1 class="sa">AIN</h1>
+                 </div>
+            </div>
+            <div id="profile">
+                <h2>I am a student Of Information Technology <br>having experties in Web development ,  web design , web Seo    and many more...</h2>
+            </div>
+            
+        </div>
+
+        <div id="skill">
+            <h1>What I DO</h1>
+            <div id="txt2">
+                <h3>&#9889; CRAZY FRONT-END DEVELOPER WHO WANT TO EXPLORE EVERY TECH STACK <BR></h3>
+                <H3><br>&#9889; DEVELOP HIGHLY INTRACTIVE FRONT END / USER INTERFACE FOR YOUR WEB </H3>
+                <H3> <br>&#9889; INTEGRATION OF THIRD PARTY SERVICES SUCH AS HIREBASE/AWS/DIGITAL OCEAN</H3>     
+            </div>
+            <div class="container">
+                <div class="wraper">
+                    <img src="https://w0.peakpx.com/wallpaper/214/158/HD-wallpaper-html5-logo-white-silk-texture-html5-emblem-programming-language-html-silk-background.jpg" alt="">
+                    <img src="https://wallpapercave.com/wp/wp2742473.jpg" alt="">          
+                    <img src="https://c4.wallpaperflare.com/wallpaper/966/672/905/javascript-minimalism-wallpaper-preview.jpg" alt="">  
+                    <img src="https://e0.pxfuel.com/wallpapers/435/560/desktop-wallpaper-php-and-web-developer.jpg" alt="">     
+                </div>
+            </div>
+            
+            
+
+        </div>
+        <div id="service">
+           <h1>Featured</h1>
+           <h2>projects</h2>
+           <video id="vid" autoplay loop>
+            <source src="https://media.istockphoto.com/id/1053118434/video/web-developing-and-coding.mp4?s=mp4-640x640-is&k=20&c=LXUSQv-ADSoPG2xBOS8D3ONbgybTE0eTlx4d5FQKu4U=" type="video/mp4">
+           </video>
+            <div id="vid2">
+                <video id="vd" autoplay loop>
+                     <source src="https://cdn.cuberto.com/cb/projects/puntopago/cover.mp4" >
+                   </video>
+                   <div id="mob">AI/ML</div>
+            </div>
+            <div id="vid3">
+                <video id="vd3" autoplay loop>
+                     <source src="https://cdn.cuberto.com/cb/projects/flipaclip/cover.mp4" >
+                   </video>
+                   <div id="mob">Web Design</div>
+            </div>
+            <div id="vid4">
+                <video id="vd4" autoplay loop>
+                     <source src="https://cdn.cuberto.com/cb/projects/cisco/cover.mp4" >
+                   </video>
+                   <div id="mob">Back-End</div>
+            </div>
+            <div id="vid5">
+                <video id="vd5" autoplay loop>
+                     <source src="https://cdn.cuberto.com/cb/projects/qvino/cover.mp4" >
+                   </video>
+                   <div id="mob">UI Design</div>
+            </div>
+        </div>
+           
+        <div id="aboutlast1">
+            <marquee behaviour="scroll" width="100%" direction="left" scrollamount="20"> 
+                <h1>Follow Us &#127987;-Follow Us &#127987;</h1>
+            </marquee>
+            <div id="insta"><a href="">instagram</a></div>
+            <div id="link"><a href="">linkedin</a></div>
+            <div id="git"><a href="">github</a></div>
+            <div id="twt"><a href="">twitter</a></div>
+        </div>
+         
+     </div>
+     
+   
+
+
+
+
+
+
+
+
+
+     <!-- <-------------- JS --------------> 
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script >
+          gsap.from( "#nav a" ,{
+            
+            duration:1,
+            delay:0.4,
+            y:-40
+        } )
+        gsap.from( "#txt" ,{
+            
+            duration:1,
+            delay:0.4,
+            y:-40
+        } )
+        gsap.from( "#intro h2" ,{
+            opacity:0,
+            duration:1,
+            delay:0.4,
+            x:-60
+        } )
+        gsap.from( "#profile" ,{
+            width : 20,
+            duration:1,
+            delay:0.4
+        } )
+        gsap.from( "#name" ,{
+            delay:0.4,
+            opacity:0,
+            duration:1,
+            y:60
+           
+        } )
+      
+        
+        gsap.to("#txt2", {
+            scrollTrigger:{
+                trigger:"txt2",
+                scroller:"body",
+               
+                start:"top 10%",
+                scrub:5,
+                pin:true,
+                pinSpacing:true
+                
+
+            },
+             scale:1.2,
+             duration:1
+        })
+           
+        gsap.from( "#mob" ,{
+            delay:0.1,
+            opacity:0,
+            duration:1,
+            y:60,
+            scrollTrigger:"#mob"
+           
+        } )
+        gsap.from( "#aboutlast1 h1" ,{
+            delay:0.1,
+           
+            duration:2,
+            x:1000,
+           
+            scrollTrigger:{
+               trigger:"#aboutlast1 h1",
+               scroller:"body",
+               start:"top 100%",
+               scrub:3
+             
+            }
+        } )
+        gsap.from( "#service" ,{
+            opacity:0,
+            y:400,
+             
+            scrollTrigger:{
+               trigger:"#service",
+               scroller:"body",
+               start:"top 90%"
+             
+            }
+        } )
+       
+
+//    <----------------curser---------->
+   const cursor = document.querySelector(".cursor");
+
+  document.addEventListener("mousemove",(e)=>{
+
+    cursor.style.left=e.pageX+"px";
+    cursor.style.top=e.pageY +"px";
+    
+    document.querySelector("")
+//   <-----------------------video------------>
+
+})
+    </script>
+</body>
+</html>
